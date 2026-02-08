@@ -1,10 +1,14 @@
 [project]
 name = "fscan"
 version = "0.1.0"
-description = "Add your description here"
+description = "Fast filesystem insights from the terminal"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "pyfiglet>=1.0.4",
     "rich>=14.3.2",
     "typer>=0.21.1",
 ]
+
+[project.scripts]
+fscan = "fscan.cli:app"
